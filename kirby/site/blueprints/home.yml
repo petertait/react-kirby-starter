@@ -1,0 +1,65 @@
+title:
+  en:           Home
+  pt_BR:        Página Inicial
+
+# Page options
+icon:           home          # Font Awesome icon: http://fontawesome.io/icons
+hide:           false         # Hide page from the panel
+preview:        page          # page, parent, first-child, last-child
+
+options:
+  delete:       false         # Allow/disallow to delete a page
+  preview:      true          # Show/hide the preview button in the sidebar
+  status:       false         # Allow/disallow to change the status of a page
+  template:     false         # Allow/disallow to change the template of a page
+  update:       true          # Prevent editing of a page for all editors
+  url:          false         # Allow/disallow to modify the URL of a page
+
+
+# Subpages options
+pages:          false
+  # add:          false         # Show/hide the add button
+  # hide:         true          # Hide subpages
+  # limit:        20            # Paginate displayed subpages
+  # max:          null          # Maximum number of subpages
+  # num:          null          # Numbering mode of visible subpages: default, zero and date
+  # sort:         null          # Sort subpages by field
+  # template:     default       # Restrict templates
+
+
+# Files options
+files:
+  add:          true          # Show/hide the add button
+  hide:         false         # Hide files in the panel
+  max:          null          # Maximum number of files
+  sanitize:     true          # Sanitizes uploaded filenames
+  size:         false         # Limit the file size
+  sortable:     true          # Enable sorting files by drag & drop
+  type:         null          # Restrict panel users to upload other types
+  height:       false         # Limit image height
+  width:        false         # Limit image width
+  fields:
+    alt:        alt
+    caption:    caption
+
+
+# Fields options
+fields:
+  title:
+    label:
+      en:       Title
+      pt_BR:    Título
+    type:       title
+
+  intro:
+    label:
+      en:       Intro
+      pt_BR:    Apresentação
+    type:       textarea
+    buttons:    false
+
+  text:
+    label:
+      en:       Texto
+      pt_BR:    Conteúdo
+    type:       textarea

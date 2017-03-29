@@ -1,0 +1,9 @@
+Title: Kirby Boilerplate
+
+----
+
+Description: Kirby CMS Boilerplate put together by Pedro Borges.
+
+----
+
+Copyright: © (date: Year) Kirby Boilerplate.

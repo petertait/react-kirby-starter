@@ -1,0 +1,9 @@
+.DS_Store
+.env
+hot
+mix-manifest.json
+/node_modules
+/accounts
+/cache
+/public/avatars
+/public/thumbs

@@ -1,0 +1,13 @@
+label:
+  en:       Image caption
+  pt_BR:    Legenda
+type:       textarea
+buttons:    false
+icon:       image
+help:
+  en: >
+    The caption is optional and displayed directly below the image.
+    Enter a detailed description if necessary, otherwise leave blank.
+  pt_BR: >
+    A legenda é opcional e será exibida exatamente abaixo da imagem.
+    Escreva uma descrição detalhada ou deixe em branco.

@@ -1,0 +1,7 @@
+label:
+  en:       Cover image
+  pt_BR:    Imagem de capa
+type:       image
+help:
+  en:       Upload images first, then select a cover image.
+  pt_BR:    Faça o upload de uma imagem primeiro, depois selecione uma imagem de capa.

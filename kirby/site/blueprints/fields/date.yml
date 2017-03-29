@@ -1,0 +1,6 @@
+label:
+  en:       Date
+  pt_BR:    Data
+type:       date
+format:     DD/MM/YYYY
+width:      1/2
