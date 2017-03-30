@@ -14,9 +14,9 @@ RewriteEngine on
 # If your homepage is http://yourdomain.com/mysite
 # Set the RewriteBase to:
 #
-# RewriteBase /mysite
+RewriteBase /admin/
 
-# In some enviroments it's necessary to
+# In some environments it's necessary to
 # set the RewriteBase to:
 #
 # RewriteBase /

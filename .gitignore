@@ -11,14 +11,14 @@ yarn-error.log*
 
 
 # -------------------------- #
-# ---------- Client --------- #
+# --------- Client --------- #
 # -------------------------- #
 
 # testing
-client/coverage
+coverage
 
 # production
-client/build
+build
 
 
 # -------------------------- #
@@ -28,7 +28,7 @@ client/build
 # Temporary files
 # ---------------
 
-kirby/public/thumbs/*
+admin/kirby/public/thumbs/*
 !/thumbs/index.html
 
 kirby/public/site/cache/*
@@ -42,11 +42,11 @@ kirby/public/site/cache/*
 # Kirby accounts
 # ---------------
 
-kirby/public/site/accounts/*
+admin/kirby/public/site/accounts/*
 !/site/accounts/index.html
 
 # Avatars
 # ---------------
 
-kirby/public/assets/avatars/*
+admin/kirby/public/assets/avatars/*
 !/assets/avatars/index.html

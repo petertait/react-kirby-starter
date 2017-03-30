@@ -6,7 +6,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      data: []
+      site: []
     }
   }
 
@@ -21,17 +21,19 @@ export default class Home extends React.Component {
       .then(data => data.json())
       .then(data => {
         this.setState({
-          data: data
+          site: data.content
         })
+
+        console.log(this.state.site)
       })
   }
 
   render() {
-    console.log(this.state.data)
+    const site = this.state.site
 
     return (
       <div>
-        <h1>{this.state.data.author}</h1>
+        <h1>{site.author}</h1>
       </div>
     )
   }

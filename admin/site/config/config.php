@@ -29,5 +29,5 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
 
-## jsonapi
-c::set('panel.install', true);
+## Redirect to admin
+c::set('home', 'redirect');
