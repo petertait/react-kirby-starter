@@ -6,7 +6,7 @@ export default class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      requestFailed: false
+      data: []
     }
   }
 
@@ -16,28 +16,22 @@ export default class Home extends React.Component {
         if (!response.ok) {
           throw Error("Network request failed")
         }
-        // console.log(response)
         return response
       })
       .then(data => data.json())
       .then(data => {
-
         this.setState({
-          content: data.content
-        })
-      }, () => {
-        this.setState({
-          requestFailed: true
+          data: data
         })
       })
   }
 
   render() {
-    console.log(this.state.content)
+    console.log(this.state.data)
 
     return (
       <div>
-
+        <h1>{this.state.data.author}</h1>
       </div>
     )
   }
