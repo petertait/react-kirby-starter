@@ -1,69 +1,42 @@
-title:
-  en:           Blog
-  pt_BR:        Blog
+title: Blog
 
-# Page options
-icon:           newspaper-o   # Font Awesome icon: http://fontawesome.io/icons
-hide:           false         # Hide page from the panel
-preview:        page          # page, parent, first-child, last-child
-
-options:
-  delete:       false         # Allow/disallow to delete a page
-  preview:      true          # Show/hide the preview button in the sidebar
-  status:       false         # Allow/disallow to change the status of a page
-  template:     false         # Allow/disallow to change the template of a page
-  update:       true          # Prevent editing of a page for all editors
-  url:          false         # Allow/disallow to modify the URL of a page
-
-
-# Subpages options
-pages:
-  add:          true          # Show/hide the add button
-  hide:         false         # Hide subpages
-  limit:        20            # Paginate displayed subpages
-  max:          null          # Maximum number of subpages
-  num:          date          # Numbering mode of visible subpages: default, zero and date
-  sort:         flip          # Sort subpages by field
-  template:     article       # Restrict templates
-
-
-# Files options
 files: false
-  # add:          true          # Show/hide the add button
-  # hide:         false         # Hide files in the panel
-  # max:          null          # Maximum number of files
-  # sanitize:     true          # Sanitizes uploaded filenames
-  # size:         false         # Limit the file size
-  # sortable:     true          # Enable sorting files by drag & drop
-  # type:         null          # Restrict panel users to upload other types
-  # height:       false         # Limit image height
-  # width:        false         # Limit image width
-  # fields:
-  #   alt:        alt
-  #   caption:    caption
 
+pages:
+  template: article
+  sort: flip
+  num: date
 
-# Fields options
+options: 
+  template: false
+  status: false
+
+icon: newspaper-o
+
 fields:
   title:
-    label:
-      en:       Title
-      pt_BR:    Título
-    type:       title
+    label: Title
+    type: title
+    required: true
+    width: 3/4
+
+  perpage:
+    label: Posts per page
+    type: number
+    min: 1
+    max: 20
+    default: 5
+    width: 1/4
+
+  text:
+    label: Text
+    type: textarea
 
   info:
-    label:
-      en:       Hint
-      pt_BR:    Dica
-    type:       info
-    text:
-      en: >
-        The blog page fetches its subpages and displays them as blog posts.
-        To fill the blog page with content, just hit the <b>Add</b> button
-        to create a new article. Your blog articles will be automatically ordered by
-        date.
-      pt_BR: >
-        A página Blog agrupa suas subpáginas para exibir uma lista de artigos.
-        Para preencher esta página com conteúdo, clique no botão <b>Adicionar</b>
-        para criar um novo artigo. Os artigos serão ordenados por data
-        automaticamente.
+    label: Hint
+    type: info
+    text: >
+      The blog page fetches its subpages and displays them as blog posts.
+      To fill the blog page with content, just hit the <b>Add</b> button
+      to create a new article. Your blog articles will be automatically ordered by
+      date.

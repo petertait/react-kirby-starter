@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react'
+import ReactDOM from 'react-dom'
 import { injectGlobal } from 'styled-components'
 
-import Home from './templates/home';
+import Home from './templates/home'
 
-injectGlobal`
+injectGlobal(`
 	@font-face {
 	  font-family: 'Apercu';
 	}
@@ -13,11 +13,11 @@ injectGlobal`
     font-family: 'Apercu';
 		margin: 0;
 	}
-`;
+`)
 
 ReactDOM.render(
   <injectGlobal>
     <Home />
   </injectGlobal>,
   document.getElementById('root')
-);
+)

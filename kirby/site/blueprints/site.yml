@@ -1,50 +1,20 @@
-title:          Site
+title: Site
 
+pages: default
 
-# Subpages options
-pages:
-  add:           true         # Show/hide the add button
-  limit:         20           # Paginate displayed subpages
-  max:           null         # Maximum number of subpages
-  num:           null         # Numbering mode of visible subpages: default, zero and date
-  sort:          null         # Sort subpages by field
-  template:      default      # Restrict templates
-
-
-# Files options
-files: false
-  add:          true          # Show/hide the add button
-  hide:         false         # Hide files in the panel
-  max:          null          # Maximum number of files
-  sanitize:     true          # Sanitizes uploaded filenames
-  size:         false         # Limit the file size
-  sortable:     true          # Enable sorting files by drag & drop
-  type:         null          # Restrict panel users to upload other types
-  height:       false         # Limit image height
-  width:        false         # Limit image width
-  fields:
-    alt:        alt
-    caption:    caption
-
-
-# Fields options
 fields:
   title:
-    label:
-      en:       Title
-      pt_BR:    Título
-    type:       title
+    label: Title
+    type:  text
+
+  author:
+    label: Author
+    type:  text
 
   description:
-    label:
-      en:       Description
-      pt_BR:    Descrição
-    type:       textarea
-    buttons:    false
-
+    label: Description
+    type:  textarea
+    
   copyright:
-    label:
-      en:       Copyright
-      pt_BR:    Copyright
-    type:       textarea
-    buttons:    false
+    label: Copyright
+    type:  textarea

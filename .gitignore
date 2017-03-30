@@ -1,0 +1,52 @@
+# dependencies
+node_modules
+
+# misc
+.DS_Store
+.env
+Icon
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# -------------------------- #
+# ---------- Client --------- #
+# -------------------------- #
+
+# testing
+client/coverage
+
+# production
+client/build
+
+
+# -------------------------- #
+# ---------- Kirby --------- #
+# -------------------------- #
+
+# Temporary files
+# ---------------
+
+kirby/public/thumbs/*
+!/thumbs/index.html
+
+kirby/public/site/cache/*
+!/site/cache/index.html
+
+# -------------------------- #
+# -------- Security -------- #
+# -------------------------- #
+# NEVER publish these files via Git!
+
+# Kirby accounts
+# ---------------
+
+kirby/public/site/accounts/*
+!/site/accounts/index.html
+
+# Avatars
+# ---------------
+
+kirby/public/assets/avatars/*
+!/assets/avatars/index.html

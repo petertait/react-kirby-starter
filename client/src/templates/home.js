@@ -1,8 +1,8 @@
 import React from 'react';
 
-const dataUrl = Kirby.url('/api/my/path')
+const dataUrl = 'http://localhost:3000/spad/'
 
-export default class Home extends Document {
+export default class Home extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -16,7 +16,7 @@ export default class Home extends Document {
         if (!response.ok) {
           throw Error("Network request failed")
         }
-        console.log(response)
+        // console.log(response)
         return response
       })
       .then(data => data.json())

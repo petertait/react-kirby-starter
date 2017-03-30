@@ -1,65 +1,41 @@
-title:
-  en:           Contact
-  pt_BR:        Contato
+title: Contact
 
-# Page options
-icon:           address-book  # Font Awesome icon: http://fontawesome.io/icons
-hide:           false         # Hide page from the panel
-preview:        page          # page, parent, first-child, last-child
+pages: false
 
-options:
-  delete:       false         # Allow/disallow to delete a page
-  preview:      true          # Show/hide the preview button in the sidebar
-  status:       false         # Allow/disallow to change the status of a page
-  template:     false         # Allow/disallow to change the template of a page
-  update:       true          # Prevent editing of a page for all editors
-  url:          false         # Allow/disallow to modify the URL of a page
+options: 
+  delete: false
+  status: false
 
-
-# Subpages options
-pages:          false
-  # add:          true          # Show/hide the add button
-  # hide:         false         # Hide subpages
-  # limit:        20            # Paginate displayed subpages
-  # max:          null          # Maximum number of subpages
-  # num:          null          # Numbering mode of visible subpages: default, zero and date
-  # sort:         null          # Sort subpages by field
-  # template:     default       # Restrict templates
-
-
-# Files options
-files:
-  add:          true          # Show/hide the add button
-  hide:         false         # Hide files in the panel
-  max:          null          # Maximum number of files
-  sanitize:     true          # Sanitizes uploaded filenames
-  size:         false         # Limit the file size
-  sortable:     true          # Enable sorting files by drag & drop
-  type:         null          # Restrict panel users to upload other types
-  height:       false         # Limit image height
-  width:        false         # Limit image width
-  fields:
-    alt:        alt
-    caption:    caption
-
-
-# Fields options
-fields:
+fields: 
   title:
-    label:
-      en:       Title
-      pt_BR:    Título
-    type:       title
-
+    label: Title
+    type: title
+  
   intro:
-    label:
-      en:       Intro
-      pt_BR:    Apresentação
-    type:       textarea
-    buttons:    false
-
+    label: Intro
+    type: textarea
+    
+  contactoptions:
+    label: Contact Options
+    type: structure
+    style: table
+    fields:
+      title:
+        label: Title
+        type: text
+      icon:
+        label: Icon
+        type: image
+      text:
+        label: Text
+        type: text
+      url:
+        label: URL
+        type: text
+      linktext:
+        label: Link Text
+        type: text
+  
   text:
-    label:
-      en:       Text
-      pt_BR:    Conteúdo
-    type:       textarea
+    label: Text
+    type: textarea
