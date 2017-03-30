@@ -23,7 +23,7 @@ export default class Home extends React.Component {
       .then(data => {
 
         this.setState({
-          content: data
+          content: data.content
         })
       }, () => {
         this.setState({
@@ -37,7 +37,7 @@ export default class Home extends React.Component {
 
     return (
       <div>
-        Hey
+
       </div>
     )
   }
