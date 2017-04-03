@@ -13,8 +13,8 @@
     "react-scripts": "0.9.5"
   },
   "scripts": {
-    "start": "PORT=4000 react-scripts start",
-    "build": "react-scripts build",
+    "start": "PORT=4000 NODE_ENV='development' react-scripts start",
+    "build": "NODE_ENV='production' react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
