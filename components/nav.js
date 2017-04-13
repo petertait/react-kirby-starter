@@ -31,7 +31,7 @@ export default class Nav extends React.Component {
       return (
         <li
           key={link.title}>
-          <Link><a href={link.url}>{link.title}</a></Link>
+          <Link href={link.url}><a>{link.title}</a></Link>
         </li>
       )
     })
