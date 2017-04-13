@@ -1,21 +1,23 @@
 {
   "name": "react-kirby-starter",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-helmet": "^5.0.2",
-    "react-router-dom": "^4.0.0",
-    "styled-components": "^1.4.4"
-  },
-  "devDependencies": {
-    "react-scripts": "0.9.5"
+  "author": "Peter Tait",
+  "version": "1.0.0",
+  "description": "Boilerplate for a React based website with a CMS",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/petertait/react-cms-boilerplate.git"
   },
   "scripts": {
-    "start": "PORT=4000 NODE_ENV='development' react-scripts start",
-    "build": "NODE_ENV='production' react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "next -p 4000",
+    "build": "next build",
+    "start": "next start -p 4000",
+    "deploy": "now"
+  },
+  "dependencies": {
+    "next": "^2.0.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-components": "^1.4.4"
   }
 }

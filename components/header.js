@@ -1,14 +1,13 @@
 import React from 'react'
 // import apiUrl from '../constants'
 
-const apiUrl = 'http://localhost:3000/spad/'
+const apiUrl = 'http://localhost:3000/about/api'
 
 export default class Header extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      site: [],
-      pages: []
+      page: []
     }
   }
 
@@ -18,20 +17,18 @@ export default class Header extends React.Component {
       .then(data => {
         console.log(data)
         this.setState({
-          site: data.content,
-          pages: data.children
+          page: data[0]
         })
 
-        console.log(this.state.site)
-        console.log(this.state.pages)
+        console.log(this.state.page)
     })
   }
 
   render() {
-    const site = this.state.site
+    const page = this.state.page
     return (
       <div>
-        <h1>{site.author}</h1>
+        <h1>{page.title}</h1>
       </div>
     )
   }
