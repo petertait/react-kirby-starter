@@ -20,6 +20,10 @@ var _header = require('../components/header');
 
 var _header2 = _interopRequireDefault(_header);
 
+var _nav = require('../components/nav');
+
+var _nav2 = _interopRequireDefault(_nav);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/peter/Repos/react-kirby-starter/pages/index.js?entry';
@@ -28,22 +32,27 @@ exports.default = function () {
   return _react2.default.createElement('div', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 9
     }
   }, _react2.default.createElement(_head2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     }
   }, _react2.default.createElement('title', {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     }
   }, 'Home')), _react2.default.createElement(_header2.default, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 13
     }
-  }));
+  }, _react2.default.createElement(_nav2.default, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    }
+  })));
 };

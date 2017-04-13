@@ -12,7 +12,7 @@ $json['data']  = array();
 foreach($data as $page) {
 
   $json['data'][] = array(
-    'url'   => (string)$page->url(),
+    'url'   => (string)$page->slug(),
     'title' => (string)$page->title()
   );
 

@@ -1,7 +1,7 @@
 import React from 'react'
 // import apiUrl from '../constants'
 
-const apiUrl = 'http://localhost:3000/about/api'
+const apiUrl = 'http://localhost:3000/about'
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -29,6 +29,7 @@ export default class Header extends React.Component {
     return (
       <div>
         <h1>{page.title}</h1>
+        {this.props.children}
       </div>
     )
   }

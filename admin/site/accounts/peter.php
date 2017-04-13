@@ -7,4 +7,5 @@ email: contact@petertait.com
 language: en
 role: admin
 history:
+  - about
   - home

@@ -28,29 +28,33 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _link = require('next/dist/lib/link.js');
+
+var _link2 = _interopRequireDefault(_link);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/peter/Repos/react-kirby-starter/components/header.js';
-
+var _jsxFileName = '/Users/peter/Repos/react-kirby-starter/components/nav.js';
 // import apiUrl from '../constants'
 
-var apiUrl = 'http://localhost:3000/about';
 
-var Header = function (_React$Component) {
-  (0, _inherits3.default)(Header, _React$Component);
+var apiUrl = 'http://localhost:3000/api';
 
-  function Header(props) {
-    (0, _classCallCheck3.default)(this, Header);
+var Nav = function (_React$Component) {
+  (0, _inherits3.default)(Nav, _React$Component);
 
-    var _this = (0, _possibleConstructorReturn3.default)(this, (Header.__proto__ || (0, _getPrototypeOf2.default)(Header)).call(this, props));
+  function Nav(props) {
+    (0, _classCallCheck3.default)(this, Nav);
+
+    var _this = (0, _possibleConstructorReturn3.default)(this, (Nav.__proto__ || (0, _getPrototypeOf2.default)(Nav)).call(this, props));
 
     _this.state = {
-      page: []
+      nav: []
     };
     return _this;
   }
 
-  (0, _createClass3.default)(Header, [{
+  (0, _createClass3.default)(Nav, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
       var _this2 = this;
@@ -58,33 +62,50 @@ var Header = function (_React$Component) {
       fetch(apiUrl).then(function (data) {
         return data.json();
       }).then(function (data) {
-        console.log(data);
+        // console.log(data)
         _this2.setState({
-          page: data[0]
+          nav: data.data
         });
 
-        console.log(_this2.state.page);
+        console.log(_this2.state.nav);
       });
     }
   }, {
     key: 'render',
     value: function render() {
-      var page = this.state.page;
+      var nav = this.state.nav;
+      var links = this.state.nav.map(function (link) {
+        return _react2.default.createElement('li', {
+          key: link.title, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 32
+          }
+        }, _react2.default.createElement(_link2.default, {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          }
+        }, _react2.default.createElement('a', { href: link.url, __source: {
+            fileName: _jsxFileName,
+            lineNumber: 34
+          }
+        }, link.title)));
+      });
       return _react2.default.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 39
         }
       }, _react2.default.createElement('h1', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 40
         }
-      }, page.title), this.props.children);
+      }, links));
     }
   }]);
 
-  return Header;
+  return Nav;
 }(_react2.default.Component);
 
-exports.default = Header;
+exports.default = Nav;
