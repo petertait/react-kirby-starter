@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../header'
-import Nav from '../nav'
+import Header from './header'
+import Nav from './nav'
 
 const Page = () => (
   <Header>
-
+    <Nav />
   </Header>
-  <Nav />
 )
 
 export default Page

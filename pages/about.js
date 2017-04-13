@@ -1,10 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Header from '../components/header'
+import Page from '../components/page'
 
 export default class extends React.Component {
-  
+
   constructor (props) {
     super(props)
   }
@@ -15,7 +15,7 @@ export default class extends React.Component {
         <Head>
           <title>About</title>
         </Head>
-        <Header />
+        <Page />
       </div>
     )
   }
