@@ -14,6 +14,15 @@ $json[] = array(
   'email'  => (string)$page->email()
 );
 
+// Children
+$children = $site->find('about')->children()->visible();
+foreach($children as $page) {
+  $json['children'][] = array(
+    'url'   => (string)$page->slug(),
+    'title' => (string)$page->title()
+  );
+}
+
 echo json_encode($json);
 
 ?>

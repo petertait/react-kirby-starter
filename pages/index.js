@@ -5,27 +5,41 @@ import axios from 'axios'
 import Page from '../components/page'
 
 export default class extends React.Component {
-  static async getInitialProps () {
-    if(!process.browser) {
-      const res = await axios.get(API_URL)
-      return {data: res.data}
-    } else {
-      return {data: JSON.parse(sessionStorage.getItem('bpl'))}
+  constructor() {
+    super()
+    this.state = {
+      site: [],
+      navigation: [],
+      home: [],
     }
   }
 
-  componentDidMount () {
-    if(!sessionStorage.getItem('bpl')) sessionStorage.setItem('bpl', JSON.stringify(this.props.data))
-    console.log(this.props.data)
+  componentDidMount() {
+    axios.get(API_URL + 'api')
+    .then(response => {
+      const site = response.data.site[0]
+      const navigation = response.data.navigation[0]
+      const home = response.data.home[0]
+      this.setState({
+        site,
+        navigation,
+        home
+      })
+    })
+    .catch(function (error) {
+      console.log(error)
+    })
   }
 
   render() {
     return (
       <div>
         <Head>
-          <title>Home</title>
+          <title>{this.state.site.title}</title>
         </Head>
-        <Page />
+        <Page>
+          test
+        </Page>
       </div>
     )
   }

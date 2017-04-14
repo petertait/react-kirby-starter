@@ -2,10 +2,12 @@ import React from 'react'
 import Header from './header'
 import Nav from './nav'
 
-const Page = () => (
-  <Header>
-    <Nav />
-  </Header>
-)
+export default ({ children }) => (
+  <div>
+    <Header>
+      <Nav />
 
-export default Page
+    </Header>
+    { children }
+  </div>
+)
