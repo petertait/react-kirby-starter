@@ -1961,7 +1961,7 @@ isobject@^2.0.0:
   dependencies:
     isarray "1.0.0"
 
-isomorphic-fetch@^2.1.1, isomorphic-fetch@^2.2.1:
+isomorphic-fetch@^2.1.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
   dependencies:
@@ -2195,6 +2195,14 @@ mkdirp-then@1.2.0:
   resolved "https://registry.yarnpkg.com/mkdirp/-/mkdirp-0.5.1.tgz#30057438eac6cf7f8c4767f38648d6697d75c903"
   dependencies:
     minimist "0.0.8"
+
+mobx-jsonapi-store@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/mobx-jsonapi-store/-/mobx-jsonapi-store-3.2.0.tgz#305d774296333203d3ccf36362548b2eecad92d5"
+
+mobx-provide@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/mobx-provide/-/mobx-provide-1.0.3.tgz#41084509be2036833cb646e59e74b49b550fc878"
 
 mobx-react@^4.1.8:
   version "4.1.8"
@@ -2689,6 +2697,10 @@ react-dom@^15.4.2:
     loose-envify "^1.1.0"
     object-assign "^4.1.0"
     prop-types "~15.5.7"
+
+react-global-state@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/react-global-state/-/react-global-state-0.1.2.tgz#e573dce6dbf97b280ab029d94cc464dfaffa894b"
 
 react-hot-loader@3.0.0-beta.6:
   version "3.0.0-beta.6"

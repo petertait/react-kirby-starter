@@ -9,7 +9,7 @@ c::set('home', 'redirect');
 ## Search Query
 c::set('routes', array(
   array(
-    'pattern' => 'search/(:all)',
+    'pattern' => 'api/search/(:all)',
     'action' => function ($uri) {
       $query   = $uri;
       $results = site()->search($query)->toJson();

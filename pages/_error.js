@@ -1,8 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 
-import Page from '../components/page'
-
 export default class extends React.Component {
   static getInitialProps ({ res, xhr }) {
     const statusCode = res ? res.statusCode : (xhr ? xhr.status : null)
